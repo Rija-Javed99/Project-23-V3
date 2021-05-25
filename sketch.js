@@ -16,14 +16,11 @@ function setup() {
 	rectMode(CENTER);
 	
 
-	packageSprite=createSprite(width/2, 80, 10,10);
-	packageSprite.addImage(packageIMG)
-	packageSprite.scale=0.2
-
-	helicopterSprite=createSprite(width/2, 200, 10,10);
-	helicopterSprite.addImage(helicopterIMG)
-	helicopterSprite.scale=0.6
-
+	
+	
+	//create package and helicopter
+	
+	
 	groundSprite=createSprite(width/2, height-35, width,10);
 	groundSprite.shapeColor=color(255)
 
@@ -71,9 +68,9 @@ function draw() {
   rectMode(CENTER);
   background(0);
  
-  packageSprite.x= packageBody.position.x 
-  packageSprite.y= packageBody.position.y 
-
+	
+	
+	
   
   drawSprites();
   
@@ -82,22 +79,11 @@ function draw() {
 }
 
 function keyPressed() {
-  if (keyCode === LEFT_ARROW) {
-
-    helicopterSprite.x=helicopterSprite.x-20;    
-    translation={x:-20,y:0}
-    Matter.Body.translate(packageBody, translation)
-
-
-  } else if (keyCode === RIGHT_ARROW) {
-    helicopterSprite.x=helicopterSprite.x+20;
-    translation={x:20,y:0}
-    Matter.Body.translate(packageBody, translation)
-  }
-  else if (keyCode === DOWN_ARROW) {
-    Matter.Body.setStatic(packageBody,false);
-    
-  }
+ 
+	
+	
+	
+	
 }
 
 
