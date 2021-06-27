@@ -24,7 +24,6 @@ function setup() {
 	groundSprite=createSprite(width/2, height-35, width,10);
 	groundSprite.shapeColor=color(255)
 
-
 	engine = Engine.create();
 	world = engine.world;
 
@@ -36,7 +35,6 @@ function setup() {
 
  	boxPosition=width/2-100
  	boxY=610;
-
 
  	boxleftSprite=createSprite(boxPosition, boxY, 20,100);
  	boxleftSprite.shapeColor=color(255,0,0);
@@ -65,26 +63,15 @@ function setup() {
 function draw() {
   rectMode(CENTER);
   background(0);
- 
-
-	
-	
-	
-	
-	
-	
-  
+  packageSprite.x= packageBody.position.x 
+  packageSprite.y= packageBody.position.y 
   drawSprites();
-  
-  
- 
 }
 
 function keyPressed() {
  
 	
-	
-	
+	//set if else conditions for left, right and down arrow
 	
 }
 
